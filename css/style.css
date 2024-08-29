@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    background-color: #010101;
+    display: flex;
+    padding: 1px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    margin-left: 100px;
+    height: 90px;
+    width: 90px;
+    background-image: url(../Gambar/harimau.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+nav section{
+    margin-right: 100px;
+    display: flex;
+}
+nav section a{
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 8px;
+}
+nav section a:hover{
+    background-color: #007bff;
+}
+body{
+    background-color: #222222;
+}
+article .banner{
+    width: 100%;
+    padding: 10px;
+    height: 780px;
+    background-size: cover;
+    background-position: center;
+}
+.banner img{
+    border: 3px ridge #c0c0c0;
+    width: 100%;
+    height: 680px;
+}
+article header{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 20px;
+}
+article p{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.sectionA, .sectionB{
+    padding: 20px;
+}
+.sectionA .profile{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.profile-item .profile-img{
+    margin: auto;
+    height: 180px;
+    border: 1px solid grey;
+    width: 180px;
+    border-radius: 50%;
+    background-image: url(../ilustrasi-lempeng-konvergen-istock-871193152_ratio-16x9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.previus, .next{
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 18px;
+    border: none;
+    padding: 5px 10px;
+}
+.sectionB{
+    padding-bottom: 58px;
+}
+.profile-item h2{
+    text-align: center;
+}
+.mesage{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sectionB header{
+    width: 100%;
+}
+form{
+    padding: 10px;
+    width: 400px;
+    border: 1px solid #c0c0c0;
+}
+.form-group{
+    padding: 10px;
+    width: 390px;
+    display: flex;
+    justify-content: space-around;
+}
+form .biodata{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+form .biodata label{
+    color: #fff;
+    margin-top: 10px;
+}
+form .tDua{
+    display: flex;
+    width: 15px;
+    height: 180px;
+    flex-direction: column;
+}
+form .tDua p{
+    margin: 5.8px;
+}
+form .field{
+    margin-left: 10px;
+}
+form #respon{
+    color: #ff0000;
+    text-indent: 10px;
+}
+.field input[type=text]{
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #c0c0c0;
+    background-color: #222222;
+    margin-top: 2px;
+    width: 100%;
+    height: 30px;
+}
+.field input[type=date]{
+    border-radius: 5px;
+    color: #fff;
+    background-color: #222222;
+    border: 1px solid #c0c0c0;
+    margin-top: 9px;
+    width: 100%;
+    height: 30px;
+}
+.field .jKelamin{
+    margin-top: 10px;
+}
+.field .jKelamin span{
+    color: #fff;
+}
+.field textarea{
+    margin-top: 15px;
+    color: #fff;
+    background-color: #222222;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+}
+.btn{
+    padding: 10px 5px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+}
+.output{
+    height: 315px;
+    width: 350px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 10px;
+}
+.output p{
+    font-weight: 700;
+}
+.output span{
+    font-weight: 200;
+}
+.output p, span{
+    color: #fff;
+}
+footer{
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: right;
+}
+
+@media (max-width : 780px){
+    .profile{
+        flex-direction: column;
+    }
+    .mesage{
+        flex-direction: column;
+        justify-content: center;
+    }
+}

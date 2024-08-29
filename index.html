@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <header>
+            <div class="logo"></div>
+        </header>
+
+        <section>
+            <a href="#">Home</a>
+            <a href="#profile">Our Profile</a>
+            <a href="#">Achivement</a>
+            <a href="#message-Us">Message Us</a>
+        </section>
+    </nav>
+
+    <main>
+
+        <article>
+            <header>
+                <h1>Hii "<span id="person"></span>". Welcome To My Website</h1>
+            </header>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+            <div class="banner">
+                <img class="img-slideShow" src="Gambar/banner_1.jfif" alt="">
+                <img class="img-slideShow" src="Gambar/banner_2.jpeg" alt="">
+                <button class="previus" onclick="plusDivs(1)">Previous</button>
+                <button class="next" onclick="plusDivs(1)">Next</button>
+            </div>
+        </article>
+        <hr>
+
+        <section class="sectionA" id="profile">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+            <section class="profile">
+                <div class="profile-item">
+                    <img class="profile-img" src="Gambar/logo_MI.png">
+                    <h2>MI Simpang</h2>
+                </div>
+                <div class="profile-item">
+                    <img class="profile-img" src="Gambar/Logo_SMP.jfif">
+                    <h2>SMPN 1 Cisolok</h2>
+                </div>
+                <div class="profile-item">
+                    <img class="profile-img" src="Gambar/logo_SMK.png">
+                    <h2>SMK Samudra</h2>
+                </div>
+            </section>
+        </section>
+        <hr>
+
+        <section class="sectionB" id="message-Us">
+
+            <header>
+                <h1>Message Us</h1>
+            </header>
+            <div class="mesage">
+            <form name="message-form" onsubmit="return formValidation()" >
+                <div class="form-group">
+                <div class="biodata">
+                    <label for="nama">Nama</label>
+                    <label for="tLahir">Tanggal lahir</label>
+                    <label for="jKelamin">Jensi kelamin</label>
+                    <label for="pesan">Pesan</label>
+                </div>
+                <div class="tDua">
+                    <p>:</p>
+                    <p>:</p>
+                    <p>:</p>
+                    <p>:</p>
+                </div>
+                <div class="field">
+                    <input type="text" name="nama" placeholder="Nama">
+                    <input type="date" name="tLahir">
+                    <div class="jKelamin">
+                        <input type="radio" name="jKelamin" id="male" value="laki-laki"> 
+                        <span>Laki-laki</span>
+                        <input type="radio" name="jKelamin" id="female" value="perempuan"> <span>Perempuan</span>
+                    </div>
+                    <textarea name="pesan" id="pesan" cols="30" rows="5"></textarea>
+                </div>
+            </div>
+            <p id="respon"></p>
+            <button type="submit" class="btn" value="submit">Submit</button>
+            </form>
+
+            <div class="output">
+                <p>Nama : <span id="sender-full-name"></span></p>
+                <p>Tanggal lahir : <span id="sender-date"></span></p>
+                <p>Jenis kelamin : <span id="sender-jKelamin"></span></p>
+                <p>Pesan : <span id="sender-pesan"></span></p>
+            </div>
+
+        </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; Valah Ivan Maulana
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
